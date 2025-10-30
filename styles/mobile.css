@@ -53,6 +53,10 @@
         align-items: center;
     }
 
+    .individual-hobbies img {
+        height: auto;
+    }
+
     .individual-image {
         align-items: center;
     }
