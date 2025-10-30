@@ -85,6 +85,10 @@ h5 {
     justify-content: flex-end;
 }
 
+#mobile-navbar {
+    display: none;
+}
+
 #about-me-section {
     display: flex;
     flex-direction: column;
@@ -102,7 +106,7 @@ h5 {
 
 #einstein-image {
     width: 90%;
-    padding: 1rem;
+    padding: var(--main_spacing_padding);
     /* Prevents weird distorians when the webpage is resized */
     /* Cover preserves aspect ratio, and essentially just zoooms in on the image as its container is shrunk */
     /* Cover is prefferable to contain in this scenario as the image should fill the container as much as possible at ALL times */
@@ -142,6 +146,8 @@ h5 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    /* Only used when in mobile view and the container is in column mode */
+    align-items: center;
     width: 100%;
 }
 
@@ -158,7 +164,7 @@ h5 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: var(--main_spacing_margin);
 }
 
 .individual-hobbies {
@@ -214,3 +220,5 @@ so we use object-fit contain combined with a set aspect ratio (a set pixel size 
 .navlinks {
     font-size: 18px;
 }
+
+

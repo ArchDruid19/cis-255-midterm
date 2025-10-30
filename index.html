@@ -17,10 +17,17 @@
     <link rel="stylesheet" href="styles/mobile.css">
     <!-- Font Awesome 6.5.1 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="scripts/mobile_menu.js"></script>
 </head>
 
 <body>
     <div id="main-grid-container">
+        <!-- Mobile navbar -->
+        <header id="mobile-navbar">
+            <nav class="mobile-navlink-container">
+                <a class="mobile-navlink" onclick="showMobileNavbar()"><i class="fa-solid fa-bars"></i></a>
+            </nav>
+        </header>
         <!-- Navbar -->
         <header id="top-navbar">
             <nav class="navlinks-container">
@@ -184,12 +191,6 @@
             <script src="scripts/fetch_book_data.js"></script>
         </section>
     </div>
-
-    <!-- Footer -->
-    <footer id="footer">
-
-    </footer>
-
 
 </body>
 

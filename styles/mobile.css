@@ -2,6 +2,7 @@
 @media (max-width: 800px) {
     #main-grid-container {
         grid-template-areas:
+            "mobile-navbar"
             "top-navbar"
             "einstein-image-section"
             "about-me-section"
@@ -11,8 +12,16 @@
         grid-template-columns: 1fr;
     }
 
+    #top-navbar {
+        display: none;
+    }
+
+    #mobile-navbar {
+        display: inline;
+    }
+
     #einstein-image {
-        width: 300px;
+        width: 250px;
     }
 
     /* Set a width of 80% to leave some breathing room on the left and right margins */
@@ -45,5 +54,9 @@
 
     .individual-image img {
         height: auto;
+    }
+
+    .fa-bars {
+        font-size: 24px;
     }
 }
