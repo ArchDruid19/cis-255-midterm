@@ -9,7 +9,7 @@ p {
     text-align: center;
     font-size: 18px;
     /* Make the text more readable by slightly increasing line height */
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 h3,
@@ -75,7 +75,8 @@ h5 {
 
 /* Space between all grid containers and the side of the webpage */
 #main-grid-container {
-    margin: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 #top-navbar {
@@ -129,10 +130,6 @@ h5 {
     object-fit: cover;
 }
 
-.about-me-header {
-    margin-top: var(--main_spacing_padding);
-}
-
 .about-me-header h3,
 .about-me-header p {
     margin-bottom: 0;
@@ -144,8 +141,8 @@ h5 {
     display: flex;
     padding: 0.75rem;
     /* Space between the words in the about me and the side of the about-me container */
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     justify-content: center;
 }
 
@@ -165,7 +162,7 @@ h5 {
 so we use object-fit contain combined with a set aspect ratio (a set pixel size also works) to achieve this */
 .individual-hobbies img {
     width: 90%;
-    aspect-ratio: 4 / 3;
+    height: 350px;
     object-fit: contain;
     /* border: 2px solid pink; */
 }
@@ -202,8 +199,8 @@ so we use object-fit contain combined with a set aspect ratio (a set pixel size 
     object-fit: cover;
 }
 
-.individual-image figcaption {
-    padding-top: 0.25rem;
+.individual-image-caption {
+    padding: 0.50rem;
 }
 
 .papers-container {
@@ -222,6 +219,19 @@ so we use object-fit contain combined with a set aspect ratio (a set pixel size 
     width: 30%;
 }
 
+/* Padding for the titles in each individual paper */
+.individual-papers-titles {
+    padding: 0.5rem;
+}
+
 .fa-book {
     font-size: 64px;
+}
+
+.about-me-header,
+.hobbies-header,
+.image-collection-header,
+.papers-header {
+    margin-top: var(--main_spacing_padding);
+    margin-bottom: var(--main_spacing_padding);
 }

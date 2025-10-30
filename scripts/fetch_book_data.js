@@ -17,6 +17,7 @@ async function fetchBookData(link) {
 
             // Create a title element for each paper
             const paper_title = document.createElement('h4');
+            paper_title.classList.add('individual-papers-titles');
 
             // Append the title stored in the json data to the newly created element title
             paper_title.textContent = element.title;

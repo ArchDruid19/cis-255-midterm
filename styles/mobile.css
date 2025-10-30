@@ -1,4 +1,4 @@
-/* Change the grid layout in mobile view to be a column of sections */
+/* Change the grid layout in mobile view to be 1 column of sections */
 @media (max-width: 800px) {
 
     #main-grid-container {
@@ -11,29 +11,33 @@
             "image-collection-section"
             "papers-section";
         grid-template-columns: 1fr;
+        grid-template-rows: auto, auto, auto, auto, auto, auto, auto;
     }
 
+    /* When entering mobile view, do not immedietly show the navbar until the user clicks the hamburger menu icon */
     #top-navbar {
         display: none;
     }
 
+    /* Show the hamburger menu icon when in mobile view */
     #mobile-navbar {
         display: inline;
     }
 
+    /* Set the image to about 250px for mobile users with a px width <= 300 */
     #einstein-image {
         width: 250px;
     }
 
-    #about-me-container,
+    .about-me-container,
     .about-me-header {
         /* Change the margins in mobile view so each word isnt on 1 line */
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 1.75rem;
+        margin-right: 1.75rem;
     }
 
     .about-me-header {
-        margin-top: 1rem;
+        margin-top: 1.25rem;
     }
 
     /* Set a width of 80% to leave some breathing room on the left and right margins */

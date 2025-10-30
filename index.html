@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!-- At a minimum we need Dr. Einstein's photograph and a section that includes all of the papers he has published -->
-<!-- We should also add a section about his hobbies, about me, and maybe the image collection -->
-
-<!-- When creating the papers section, we need to create a function that will add new divs once the JSON data has been read in -->
 <html>
 
 <head>
@@ -30,7 +26,9 @@
             </nav>
         </header>
 
-        <!-- Navbar -->
+
+
+        <!-- Desktop Navbar -->
         <header id="top-navbar">
             <nav class="navlinks-container">
                 <a class="navlinks" href="#papers-section">Papers</a>
@@ -40,11 +38,14 @@
             </nav>
         </header>
 
+
+
         <!-- Einstein image -->
         <section id="einstein-image-section">
-            <img class=einstein-image src="images/Albert_Einstein_sticks_his_tongue.jpg"
-                alt="Einstein sticks out his tounge">
+            <img class=einstein-image src="images/Albert_Einstein_72_birthday.jpg" alt="Einstein sticks out his tounge">
         </section>
+
+
 
         <!-- About Einstein -->
         <main id="about-me-section">
@@ -78,11 +79,14 @@
             </div>
         </main>
 
+
+
         <!-- Einstein hobbies (flex wrap in case more are added (could also used grid)) -->
         <section id="hobbies-section">
-            <header>
+            <header class="hobbies-header">
                 <h3>Hobbies</h3>
             </header>
+
             <div class="hobbies-container">
                 <div class="individual-hobbies">
                     <header class="individual-hobbies-header">
@@ -132,6 +136,7 @@
                     <header class="individual-hobbies-header">
                         <h5>Music</h5>
                     </header>
+
                     <div class="individual-hobbies-content">
                         <img src="images/einstein_violin.jpg" alt="Einstein playing his violin">
                         <p>
@@ -150,29 +155,33 @@
             </div>
         </section>
 
+
+
         <!-- Essentially just set all images to be the same height but allow differing widths (aspect ratios) and then
          flex wrap.
          Each image needs a caption underneath it -->
         <section id="image-collection-section">
-            <header>
-                <h3>Image Collection</h3>
+            <header class="image-collection-header">
+                <h3>Image Gallery</h3>
             </header>
 
             <div class="image-collection-container">
                 <figure class="individual-image">
                     <img src="images/einstein_pipe.jpg" alt="Einstein smoking a pipe">
-                    <figcaption>Me smoking a pipe, from my article "Einstein on the Atomic Bomb" in <i>The Atlantic</i>,
+                    <figcaption class="individual-image-caption">Me smoking a pipe, from my article "Einstein on the
+                        Atomic Bomb" in <i>The Atlantic</i>,
                         1945</figcaption>
                 </figure>
 
                 <figure class="individual-image">
                     <img src="images/EinsteinFuzzySlippers-1-480x600.jpg" alt="Einstein wearing fuzzy slippers">
-                    <figcaption>Me wearing my fuzzy slippers, taken at my home in Mercer County, New Jersey</figcaption>
+                    <figcaption class="individual-image-caption">Me wearing my fuzzy slippers, taken at my home in
+                        Mercer County, New Jersey</figcaption>
                 </figure>
 
                 <figure class="individual-image">
                     <img src="images/einstein_max_award.jpg" alt="Einstein accepting the Max Planck award">
-                    <figcaption>Me accepting the Max Planck Award, 1929</figcaption>
+                    <figcaption class="individual-image-caption">Me accepting the Max Planck Award, 1929</figcaption>
                 </figure>
 
             </div>
@@ -180,7 +189,7 @@
 
         <!-- Papers section -->
         <section id="papers-section">
-            <header>
+            <header class="papers-header">
                 <h3>My Papers</h3>
             </header>
             <div class="papers-container">
