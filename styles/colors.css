@@ -2,7 +2,8 @@
 
 body,
 html {
-    background-color: #D9D9D7;
+    /* background-color: #D9D9D7; */
+    background: linear-gradient(to bottom right, #5A7A8C, #5c7b8c, #607987);
 }
 
 * {
@@ -10,19 +11,17 @@ html {
 }
 
 figcaption {
-    background: white;
+    background: var(--paper);
 }
 
 .individual-papers {
     border: 1px solid #ccc;
     color: #1d1919;
-    background: #f9e052;
+    background: var(--paper);
 }
 
-.individual-papers:hover {
-    background: orange;
-    cursor: pointer;
-
+.navlinks:hover {
+    color: var(--blue-gray);
 }
 
 .individual-hobbies {
@@ -30,8 +29,8 @@ figcaption {
     background: var(--off-gray-darker);
 }
 
-.fa-paperclip {
-    color: black;
+.fa-book {
+    color: #333436;
     font-size: 64px;
 }
 

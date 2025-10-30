@@ -11,17 +11,12 @@ async function fetchBookData(link) {
         // The json data has 1 top level element (books) that all other elements are stored in, so we loop
         // on paper_data.books 
         for (let element of paper_data.books) {
-            // For each new paper, create a div that displays flex column, and add the class individual-papers
+            // For each new paper, create a div with the class individual-papers
             const temp_div = document.createElement('div');
-            temp_div.style.display = "flex";
-            temp_div.style.flexDirection = "column";
             temp_div.classList.add('individual-papers');
 
             // Create a title element for each paper
             const paper_title = document.createElement('h4');
-
-            // const split_title_str = element.title.substring("-")
-            // console.log(split_title_str);
 
             // Append the title stored in the json data to the newly created element title
             paper_title.textContent = element.title;
@@ -35,7 +30,7 @@ async function fetchBookData(link) {
             // by creating an i element and adding the relavent fa classes
             const paper_icon = document.createElement('i');
             paper_icon.classList.add('fa-solid');
-            paper_icon.classList.add('fa-paperclip');
+            paper_icon.classList.add('fa-book');
 
             // Append all newly created elements in the order they will appear in the div
             temp_div.append(paper_title);
@@ -51,4 +46,5 @@ async function fetchBookData(link) {
     }
 }
 
+// Call the function when the script is used in the HTML
 fetchBookData('https://upadhayay.github.io/db.json');
