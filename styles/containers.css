@@ -1,0 +1,214 @@
+/* ----------------------------------- */
+/* Base element styles */
+/* ----------------------------------- */
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    /* Make the text more readable by slightly increasing line height */
+    line-height: 1.8;
+}
+
+h3,
+h5 {
+    text-align: center;
+
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+/* ----------------------------------- */
+/* Main grid  */
+/* ----------------------------------- */
+#main-grid-container {
+    display: grid;
+    grid-template-areas:
+        "top-navbar top-navbar"
+        "einstein-image-section about-me-section "
+        "hobbies-section hobbies-section"
+        "image-collection-section image-collection-section"
+        "papers-section papers-section";
+
+    /* Make the image next to the text slightly smaller */
+    grid-template-columns: 0.4fr 0.6fr;
+    /* Make the container strech vertically as much as needed */
+    grid-template-rows: auto auto auto auto auto;
+    gap: 0.50rem;
+}
+
+#top-navbar {
+    grid-area: top-navbar;
+}
+
+#einstein-image-section {
+    grid-area: einstein-image-section;
+}
+
+#about-me-section {
+    grid-area: about-me-section;
+}
+
+
+#hobbies-section {
+    grid-area: hobbies-section;
+}
+
+#papers-section {
+    grid-area: papers-section;
+}
+
+#image-collection-section {
+    grid-area: image-collection-section;
+}
+
+/* Space between all grid containers and the side of the webpage */
+#main-grid-container {
+    margin: 1rem;
+}
+
+
+/* ----------------------------------- */
+/* ID Elements */
+/* ----------------------------------- */
+#top-navbar {
+    padding: var(--main_spacing_padding);
+    display: flex;
+    justify-content: flex-end;
+}
+
+#about-me-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-me-container {
+    display: flex;
+    padding: 0.75rem;
+    /* Space between the words in the about me and the side of the about-me container */
+    margin-left: 5rem;
+    margin-right: 5rem;
+    justify-content: center;
+}
+
+#einstein-image {
+    width: 90%;
+    padding: 1rem;
+    /* Prevents weird distorians when the webpage is resized */
+    /* Cover preserves aspect ratio, and essentially just zoooms in on the image as its container is shrunk */
+    /* Cover is prefferable to contain in this scenario as the image should fill the container as much as possible at ALL times */
+    object-fit: cover;
+}
+
+#einstein-image-section {
+    display: flex;
+    justify-content: center;
+}
+
+#papers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--main_spacing_padding);
+}
+
+/* ----------------------------------- */
+/* Class elements */
+/* ----------------------------------- */
+
+/* Make the child elements of the .about-me-header have no default spacing to make the titles */
+/* underneath the name appear closer together vertically */
+.about-me-header h3,
+.about-me-header p {
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+.about-me-header {
+    margin-top: var(--main_spacing_padding);
+}
+
+.navlinks-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.individual-papers {
+    text-align: center;
+    margin: 0.75rem;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.individual-hobbies {
+    width: 30%;
+    margin-bottom: var(--main_spacing_padding);
+}
+
+/* Every image needs to fit inside the individual container and be the same height while also maintaining its proportions
+so we use object-fit contain combined with a set aspect ratio (a set pixel size also works) to achieve this */
+.individual-hobbies img {
+    width: 90%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    /* border: 2px solid pink; */
+}
+
+.individual-hobbies-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-items: center; centers elements horitzontally when flex:column is used */
+    /* justify-content: center; centers elements horizontally when flex:row is used  */
+}
+
+.individual-hobbies-content p {
+    padding: 1rem;
+}
+
+#image-collection-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.individual-image {
+    /* 3 images per row (depending on the widths of the images, which should be consistent) */
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.individual-image img {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+}
+
+.individual-image figcaption {
+    padding-top: 0.25rem;
+}
+
+.navlinks {
+    font-size: 18px;
+}

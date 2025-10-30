@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- At a minimum we need Dr. Einstein's photograph and a section that includes all of the papers he has published -->
+<!-- We should also add a section about his hobbies, about me, and maybe the image collection -->
+
+<!-- When creating the papers section, we need to create a function that will add new divs once the JSON data has been read in -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dr. Albert Einstein's Personal Website</title>
+    <meta name="description" content="The personal website of beloved theoretical physcisct Dr. Albert Einstein">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/global_vars.css">
+    <link rel="stylesheet" href="styles/colors.css">
+    <link rel="stylesheet" href="styles/containers.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <!-- Font Awesome 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="main-grid-container">
+        <!-- Navbar -->
+        <header id="top-navbar">
+            <nav class="navlinks-container">
+                <a class="navlinks" href="#papers-section">Papers</a>
+                <a class="navlinks">Image Gallery</a>
+                <a class="navlinks">Hobbies</a>
+                <a class="navlinks">About Me</a>
+            </nav>
+        </header>
+
+        <!-- Einstein image -->
+        <section id="einstein-image-section">
+            <img id=einstein-image src="images/Albert_Einstein_sticks_his_tongue.jpg"
+                alt="Einstein sticks out his tounge">
+        </section>
+
+        <!-- About Einstein -->
+        <main id="about-me-section">
+            <header class="about-me-header">
+                <h3>Albert Einstein</h3>
+                <p>Theoretical physcisct, Philosopher, Educator.</p>
+            </header>
+            <div id="about-me-container">
+                <p>I was born on March 14, 1879, in Ulm, a small city in the German Empire (modern day
+                    Germany). By age 13 I was already extremely passionate about mathematics,
+                    teaching myself algebra, calculus, and Euclidean geometry. What fascinated me were puzzles of
+                    nature: light,
+                    magnetism, and the invisible forces that seemed to govern the world.
+                    <br>
+                    After studying at the Polytechnic in Zurich, I found myself working as a technical expert in the
+                    Swiss Patent Office. It was there, in the quiet hours after work, that I developed many of the ideas
+                    that would later be called revolutionary. In 1905, I published papers on the
+                    photoelectric effect, Brownian motion, and the special theory of relativity which eventually
+                    reshaped our
+                    understanding of space and time.
+                    <br>
+                    Later, in 1915, I completed the general theory of relativity, which revealed gravity not as a force
+                    but as the curvature of spacetime.
+                    <br>
+                    Beyond science, I have always cared deeply about humanity. I opposed war, nationalism, and injustice
+                    wherever I saw them. Though I never considered myself a man of politics, I could not remain silent
+                    when conscience demanded speech.
+                    <br>
+                    In my later years, I settled in Princeton, where I continued to think, to teach, and to wonder.
+                </p>
+            </div>
+        </main>
+
+        <!-- Einstein hobbies (flex wrap in case more are added (could also used grid)) -->
+        <section id="hobbies-section">
+            <header>
+                <h3>Hobbies</h3>
+            </header>
+            <div class="hobbies-container">
+                <div class="individual-hobbies">
+                    <header class="hobbies-header">
+                        <h5>Advocacy</h5>
+                    </header>
+
+                    <div class="individual-hobbies-content">
+                        <img src="images/1933_einstein_royalalberthall.jpg"
+                            alt="Einstein giving a speech at Royal Albert Hall">
+                        <p>
+                            Throughout my life I have always been a pacifist. Prior to WWI, In 1914 I signed
+                            a counter manifesto that called for an end to hostilites and a United Europe. I was also
+                            part of the
+                            German League of Human Rights, and was very dedicated to repairng relations between Germany
+                            and France
+                            after the war.
+                            <br>
+                            After moving to America in 1932 I became involved with the civil rights movement, where I
+                            worked with a number of
+                            organizations (such as the Princeton chapter of the NAACP) to demand equality and renouce
+                            racist ideas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="individual-hobbies">
+                    <header class="hobbies-header">
+                        <h5>Learning and Teaching</h5>
+                    </header>
+
+                    <div class="individual-hobbies-content">
+                        <img src="images/070402_r16064b_p646.jpg" alt="Einstein standing next to a collection of books">
+                        <p>
+                            One of my greatest joys has always been the act of learning. I have
+                            devoted myself to understanding the mysteries of the world and, whenever possible, sharing
+                            that understanding with others. From a very young age, I sensed that education was not
+                            merely a path to a profession, but a lifelong endeavor that nourishes the mind and spirit.
+                            To learn is to exercise curiosity, to question what others take for granted, and to find
+                            beauty in the order hidden beneath apparent chaos. Teaching, in turn, has always been a
+                            natural extension of this pursuit, for knowledge finds its true value only when it
+                            enlightens others.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="individual-hobbies">
+                    <header class="hobbies-header">
+                        <h5>Music</h5>
+                    </header>
+                    <div class="individual-hobbies-content">
+                        <img src="images/einstein_violin.jpg" alt="Einstein playing his violin">
+                        <p>
+                            Music has always been very important to me. Since the age of six I have been playing the
+                            violin.
+                            Whenever I would travel I would bring my violin with me (which I named Lina) just in case
+                            there would be a
+                            chance I could play. At one point I was quoted as saying that "“If I were not a physicist, I
+                            would probably be a musician."
+                            Whenever I am having trouble with my work in physics, I take a break and listen to Mozart or
+                            Bach which helps me decompress
+                            and think about solutions to problems more clearly.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Essentially just set all images to be the same height but allow differing widths (aspect ratios) and then
+         flex wrap.
+         Each image needs a caption underneath it -->
+        <section id="image-collection-section">
+            <header>
+                <h3>Image Collection</h3>
+            </header>
+
+            <div id="image-collection-container">
+                <figure class="individual-image">
+                    <img src="images/einstein_pipe.jpg" alt="Einstein smoking a pipe">
+                    <figcaption>Me smoking a pipe, from my article "Einstein on the Atomic Bomb" in <i>The Atlantic</i>,
+                        1945</figcaption>
+                </figure>
+
+                <figure class="individual-image">
+                    <img src="images/EinsteinFuzzySlippers-1-480x600.jpg" alt="Einstein wearing fuzzy slippers">
+                    <figcaption>Me wearing my fuzzy slippers, taken at my home in Mercer County, New Jersey</figcaption>
+                </figure>
+
+                <figure class="individual-image">
+                    <img src="images/einstein_max_award.jpg" alt="Einstein accepting the Max Planck award">
+                    <figcaption>Me accepting the Max Planck Award, 1929</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- Papers section -->
+        <section id="papers-section">
+            <header>
+                <h3>My Papers</h3>
+            </header>
+            <div id="papers-container">
+
+            </div>
+            <!-- Script for loading papers into papers section (see fetch_book_data.js) -->
+            <script src="scripts/fetch_book_data.js"></script>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+    </footer>
+
+
+</body>
+
+</html>
