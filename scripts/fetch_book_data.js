@@ -6,7 +6,7 @@ async function fetchBookData(link) {
         const paper_data = await paper_response.json();
 
         // Get the container the papers will be stored in
-        const papers_div_container = document.querySelector("#papers-container");
+        const papers_div_container = document.querySelector(".papers-container");
 
         // The json data has 1 top level element (books) that all other elements are stored in, so we loop
         // on paper_data.books 

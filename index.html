@@ -22,12 +22,14 @@
 
 <body>
     <div id="main-grid-container">
+
         <!-- Mobile navbar -->
         <header id="mobile-navbar">
             <nav class="mobile-navlink-container">
                 <a class="mobile-navlink" onclick="showMobileNavbar()"><i class="fa-solid fa-bars"></i></a>
             </nav>
         </header>
+
         <!-- Navbar -->
         <header id="top-navbar">
             <nav class="navlinks-container">
@@ -40,7 +42,7 @@
 
         <!-- Einstein image -->
         <section id="einstein-image-section">
-            <img id=einstein-image src="images/Albert_Einstein_sticks_his_tongue.jpg"
+            <img class=einstein-image src="images/Albert_Einstein_sticks_his_tongue.jpg"
                 alt="Einstein sticks out his tounge">
         </section>
 
@@ -50,7 +52,7 @@
                 <h3>Albert Einstein</h3>
                 <p>Theoretical physcisct, Philosopher, Educator.</p>
             </header>
-            <div id="about-me-container">
+            <div class="about-me-container">
                 <p>I was born on March 14, 1879, in Ulm, a small city in the German Empire (modern day
                     Germany). By age 13 I was already extremely passionate about mathematics,
                     teaching myself algebra, calculus, and Euclidean geometry. What fascinated me were puzzles of
@@ -83,7 +85,7 @@
             </header>
             <div class="hobbies-container">
                 <div class="individual-hobbies">
-                    <header class="hobbies-header">
+                    <header class="individual-hobbies-header">
                         <h5>Advocacy</h5>
                     </header>
 
@@ -107,7 +109,7 @@
                 </div>
 
                 <div class="individual-hobbies">
-                    <header class="hobbies-header">
+                    <header class="individual-hobbies-header">
                         <h5>Learning and Teaching</h5>
                     </header>
 
@@ -126,9 +128,8 @@
                     </div>
                 </div>
 
-
                 <div class="individual-hobbies">
-                    <header class="hobbies-header">
+                    <header class="individual-hobbies-header">
                         <h5>Music</h5>
                     </header>
                     <div class="individual-hobbies-content">
@@ -146,8 +147,6 @@
                         </p>
                     </div>
                 </div>
-
-
             </div>
         </section>
 
@@ -159,7 +158,7 @@
                 <h3>Image Collection</h3>
             </header>
 
-            <div id="image-collection-container">
+            <div class="image-collection-container">
                 <figure class="individual-image">
                     <img src="images/einstein_pipe.jpg" alt="Einstein smoking a pipe">
                     <figcaption>Me smoking a pipe, from my article "Einstein on the Atomic Bomb" in <i>The Atlantic</i>,
@@ -184,7 +183,7 @@
             <header>
                 <h3>My Papers</h3>
             </header>
-            <div id="papers-container">
+            <div class="papers-container">
 
             </div>
             <!-- Script for loading papers into papers section (see fetch_book_data.js) -->

@@ -1,5 +1,6 @@
 /* Change the grid layout in mobile view to be a column of sections */
 @media (max-width: 800px) {
+
     #main-grid-container {
         grid-template-areas:
             "mobile-navbar"
@@ -24,6 +25,17 @@
         width: 250px;
     }
 
+    #about-me-container,
+    .about-me-header {
+        /* Change the margins in mobile view so each word isnt on 1 line */
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .about-me-header {
+        margin-top: 1rem;
+    }
+
     /* Set a width of 80% to leave some breathing room on the left and right margins */
     .individual-papers,
     .individual-hobbies,
@@ -37,17 +49,6 @@
         align-items: center;
     }
 
-    #about-me-container,
-    .about-me-header {
-        /* Change the margins in mobile view so each word isnt on 1 line */
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    .about-me-header {
-        margin-top: 1rem;
-    }
-
     .individual-image {
         align-items: center;
     }
@@ -56,6 +57,7 @@
         height: auto;
     }
 
+    /* Size of the hamburger menu icon */
     .fa-bars {
         font-size: 24px;
     }

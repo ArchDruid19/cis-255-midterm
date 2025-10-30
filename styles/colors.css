@@ -1,45 +1,28 @@
-/* ONLY PUT ELEMENT COLOR STYLES IN HERE TO KEEP THEM SEPERATE FROM SPACING AND OTHER STYLES */
+/* ----------------------------------- */
+/* Base element styles */
+/* ----------------------------------- */
 
 body,
 html {
-    /* background-color: #D9D9D7; */
+    /* Blue/gray gradient from the top left of the page to the bottom right */
     background: linear-gradient(to bottom right, #5A7A8C, #5c7b8c, #607987);
 }
 
+/* Font color for the entire page */
 * {
-    color: #333436;
+    color: var(--text-charcoal);
 }
 
 figcaption {
     background: var(--paper);
 }
 
-.individual-papers {
-    border: 1px solid #ccc;
-    color: #1d1919;
-    background: var(--paper);
-}
-
-.navlinks:hover {
-    color: var(--blue-gray);
-}
-
-.individual-hobbies {
-    /* border: 1px solid black; */
-    background: var(--off-gray-darker);
-}
-
-.fa-book {
-    color: #333436;
-    font-size: 64px;
-}
+/* ----------------------------------- */
+/* ID Elements */
+/* ----------------------------------- */
 
 #top-navbar {
     background: var(--charcoal);
-}
-
-.navlinks-container a {
-    color: var(--off-white);
 }
 
 #einstein-image-section,
@@ -58,3 +41,31 @@ figcaption {
 #papers-section {
     background: var(--off-gray);
 }
+
+/* ----------------------------------- */
+/* Class elements */
+/* ----------------------------------- */
+
+.navlinks-container a {
+    color: var(--off-white);
+}
+
+.navlinks:hover {
+    color: var(--blue-gray);
+}
+
+.individual-hobbies {
+    /* border: 1px solid black; */
+    background: var(--off-gray-darker);
+}
+
+.individual-papers {
+    /* border: 1px solid #ccc; */
+    color: var(--text-charcoal);
+    background: var(--paper);
+}
+
+.fa-book {
+    color: var(--text-charcoal);
+}
+
