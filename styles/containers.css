@@ -176,7 +176,7 @@ so we use object-fit contain combined with a set aspect ratio (a set pixel size 
 }
 
 .individual-hobbies-content p {
-    padding: 1rem;
+    padding: var(--main_spacing_padding);
 }
 
 .image-collection-container {

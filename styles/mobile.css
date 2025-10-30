@@ -53,6 +53,7 @@
         align-items: center;
     }
 
+    /* Stops vertical margining from being too extreme */
     .individual-hobbies img {
         height: auto;
     }
